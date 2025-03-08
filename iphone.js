@@ -13,6 +13,8 @@ document.addEventListener('mousemove', (e) => {
     cursorGlow.style.left = `${e.clientX}px`;
     cursorGlow.style.top = `${e.clientY}px`;
 });
+ document.addEventListener('mousemove', moveCursor);
+        document.addEventListener('touchmove', moveCursor);
 //block selection
 wall.addEventListener("selectstart", function(event) {
     event.preventDefault();
